@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.missile" version="1.0.2"  android-versionCode="2">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.missile" version="1.0.2"  android-versionCode="10001">
   <name>Missile</name>
   <description>Hello World sample application that responds to the deviceready event.</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
