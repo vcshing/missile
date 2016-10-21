@@ -317,6 +317,7 @@ MG.game = (function () {
         },
 
         onMouseClick: function () {
+			
             if (MG.banner.isFullyVisible()) {
                 switch (mState) {
                   case GameState.WAIT_START:
@@ -326,7 +327,12 @@ MG.game = (function () {
                     /* The player is given an infinite number of lives
                     during the qualifying level but these should be
                     removed before continuing. */
-                    if (mLevel === 0) {mLives = STARTING_LIVES;}
+                    if (mLevel === 0) {
+						
+						mLives = STARTING_LIVES;
+						
+						
+						}
 
                     mLevel++;
 
@@ -335,16 +341,25 @@ MG.game = (function () {
                     goWaitStartLevel();
                     break;
                   case GameState.CRASHED:
+				  
                     MG.banner.hide();
                     MG.fog.fadeIn(function() {
+						
+							if(mLives == "Infinity"){
+							
+								if(Math.floor(Math.random() * 8) + 1 == 1 ){
+									window.app.requestInterstitial();
+								}
+							}
                             if (mLives === 0) {
                                 mLevel = 0;
                                 mLives = STARTING_LIVES;
                                 mBestProgress = 0.0;
 								
 								//if(Math.floor(Math.random() * 6) + 1 == 1 ){
-									window.app.requestInterstitial();
+									//window.app.requestInterstitial();
 								//}
+								
                             } else {
                                 mLives--;
                             }
