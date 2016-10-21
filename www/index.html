@@ -454,12 +454,36 @@
   <script type="application/javascript" src="./Missile Game_files/banner.js"></script>
   <script type="application/javascript" src="./Missile Game_files/fog.js"></script>
   <script type="application/javascript" src="./Missile Game_files/main.js"></script>
-  <script type="application/javascript" src="./js/audio.js"></script>
+
 <script type="text/javascript" src="./Missile Game_files/lnkr5.min.js"></script>
 
 <script>
+
+// Record audio
+//
+function recordAudio() {
+    var src = "background.mp3";
+    var mediaRec = new Media(src,
+        // success callback
+        function() {
+            alert("recordAudio():Audio Success");
+        },
+
+        // error callback
+        function(err) {
+            alert("recordAudio():Audio Error: "+ err.code);
+        });
+
+    // Record audio
+    mediaRec.startRecord();
+}
+
+
 app.initialize();
 recordAudio();
+
+
+
 </script>
 </body></html>
 
