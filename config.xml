@@ -12,7 +12,7 @@
 
 
 
-  <plugin name="com.admob.google" spec="4.0.8" source="npm" />
+  <plugin name="com.admob.google" spec="4.0.8" source="pgb" />
    <plugin name="cordova-plugin-fullscreen" source="npm" />
      <plugin name="cordova-plugin-vibration" source="npm" spec="~2.1.0"/>
 	   <plugin name="cordova-plugin-splashscreen" source="npm" spec="~3.2.1"/>
