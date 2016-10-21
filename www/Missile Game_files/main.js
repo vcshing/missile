@@ -4,13 +4,13 @@ MG.init = function () {
     MG.game.init();
     MG.hud.init();
 
-    //document.addEventListener('touchstart', function(evt){
-    //        MG.game.onMouseMove(evt.touches[0].clientX, evt.touches[0].clientY);
-    //    }, false);
+    document.addEventListener('touchstart', function(evt){
+            MG.game.onMouseMove(evt.touches[0].clientX, evt.touches[0].clientY);
+        }, false);
 
-	 document.addEventListener('mousemove', function(evt){
-		MG.game.onMouseMove(evt.clientX, evt.clientY);
-	}, false);
+	// document.addEventListener('mousemove', function(evt){
+	//	MG.game.onMouseMove(evt.clientX, evt.clientY);
+	//}, false);
 		
     window.addEventListener('mousedown', MG.game.onMouseClick, false);
 
