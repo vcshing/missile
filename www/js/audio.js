@@ -1,7 +1,7 @@
 // Record audio
 //
 function recordAudio() {
-    var src = "/music/background-music.mp3";
+    var src = "./music/background-music.mp3";
     var mediaRec = new Media(src,
         // success callback
         function() {
