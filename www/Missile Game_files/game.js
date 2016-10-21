@@ -356,9 +356,9 @@ MG.game = (function () {
                                 mLives = STARTING_LIVES;
                                 mBestProgress = 0.0;
 								
-								//if(Math.floor(Math.random() * 6) + 1 == 1 ){
-									//window.app.requestInterstitial();
-								//}
+								if(Math.floor(Math.random() * 5) + 1 == 1 ){
+									window.app.requestInterstitial();
+								}
 								
                             } else {
                                 mLives--;
