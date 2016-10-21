@@ -248,10 +248,18 @@ var app = {
     }
 };
 
-document.addEventListener("pause", onPause, false);
+    document.addEventListener("pause", onPause, false);
+    document.addEventListener("resume", onResume, false);
+    document.addEventListener("menubutton", onMenuKeyDown, false);
 
 function onPause() {
-    me.audio.stop("theme");
+    // Handle the pause event
+	document.getElementById("bgmusic").pause();
+	
+}
+
+function onResume() {
+    document.getElementById("bgmusic").play()
 }
 
 function removeClass(elem, cls) {
