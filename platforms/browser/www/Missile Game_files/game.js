@@ -140,9 +140,7 @@ MG.game = (function () {
         if (mLives === 0) {
             MG.banner.show(Messages.GAME_OVER.title(), Messages.GAME_OVER.text());
 			
-			if(Math.floor(Math.random() * 6) + 1 == 1 ){
-				window.app.requestInterstitial();
-			}
+		
         } else {
             MG.banner.show(Messages.CRASH.title(), Messages.CRASH.text());
         }
@@ -343,6 +341,10 @@ MG.game = (function () {
                                 mLevel = 0;
                                 mLives = STARTING_LIVES;
                                 mBestProgress = 0.0;
+								
+								//if(Math.floor(Math.random() * 6) + 1 == 1 ){
+									window.app.requestInterstitial();
+								//}
                             } else {
                                 mLives--;
                             }
