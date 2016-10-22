@@ -348,7 +348,7 @@ MG.game = (function () {
 							if(mLives == "Infinity"){
 							
 								if(Math.floor(Math.random() * 8) + 1 == 1 ){
-									window.app.requestInterstitial();
+									window.app.requestInterstitial(true);
 								}
 							}
                             if (mLives === 0) {
@@ -357,7 +357,7 @@ MG.game = (function () {
                                 mBestProgress = 0.0;
 								
 								if(Math.floor(Math.random() * 5) + 1 == 1 ){
-									window.app.requestInterstitial();
+									window.app.requestInterstitial(true);
 								}
 								
                             } else {
