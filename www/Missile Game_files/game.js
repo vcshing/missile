@@ -357,7 +357,7 @@ MG.game = (function () {
                                 mBestProgress = 0.0;
 								
 								if(Math.floor(Math.random() * 5) + 1 == 1 ){
-									window.app.requestInterstitial(true);
+									admob.requestInterstitialAd();
 								}
 								
                             } else {
