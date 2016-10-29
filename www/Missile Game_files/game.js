@@ -364,7 +364,7 @@ MG.game = (function () {
 						
 							if(mLives == "Infinity"){
 							
-								if(Math.floor(Math.random() * 8) + 1 == 1 ){
+								if(Math.floor(Math.random() * 5) + 1 == 1 ){
 									window.app.requestInterstitial(true);
 								}
 							}
@@ -373,7 +373,7 @@ MG.game = (function () {
                                 mLives = STARTING_LIVES;
                                 mBestProgress = 0.0;
 								
-								if(Math.floor(Math.random() * 5) + 1 == 1 ){
+								if(Math.floor(Math.random() * 3) + 1 == 1 ){
 									admob.requestInterstitialAd();
 								}
 								
