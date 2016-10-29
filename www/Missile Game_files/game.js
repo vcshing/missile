@@ -52,7 +52,7 @@ MG.game = (function () {
 		}
 		
 		
-        return mLevel ? 'CURRENT LEVEL : ' + mLevel : 'CURRENT LEVEL : 0';
+        return mLevel ? ' CURRENT LEVEL : ' + mLevel : ' CURRENT LEVEL : 0';
     }
 
     var Messages = {
