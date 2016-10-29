@@ -47,12 +47,12 @@ MG.game = (function () {
 			if(score==0 || score==undefined){
 				document.getElementById('hud-level-indicator-history').innerHTML="";
 			}else{
-				document.getElementById('hud-level-indicator-history').innerHTML="HIGH LEVEL : "+ score;
+				document.getElementById('hud-level-indicator-history').innerHTML="YOUR HIGHEST LEVEL : "+ score;
 			}
 		}
 		
 		
-        return mLevel ? 'LEVEL ' + mLevel : 'QUALIFYING LEVEL';
+        return mLevel ? 'CURRENT LEVEL : ' + mLevel : 'CURRENT LEVEL : 0';
     }
 
     var Messages = {
