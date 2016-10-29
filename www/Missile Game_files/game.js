@@ -365,7 +365,7 @@ MG.game = (function () {
 							if(mLives == "Infinity"){
 							
 								if(Math.floor(Math.random() * 5) + 1 == 1 ){
-									window.app.requestInterstitial(true);
+									admob.requestInterstitialAd();
 								}
 							}
                             if (mLives === 0) {
