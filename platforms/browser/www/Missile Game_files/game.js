@@ -30,11 +30,28 @@ MG.game = (function () {
 //    var mWoosh = [];
 //    var mLastWoosh = 0;
 //    var mWooshPlaying = false;
-
+	//var save = new LocalStorageManager();
+	//var score = save.getBestScore();
 
     /* Strings for UI ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
     var getLevelString = function () {
+	
+		//debugger;
+		if(!(parseInt(score)>=0)){
+			score=0;
+		}
+		if(score < mLevel){
+			save.setBestScore(mLevel);
+			score=mLevel;
+			if(score==0 || score==undefined){
+				document.getElementById('hud-level-indicator-history').innerHTML="";
+			}else{
+				document.getElementById('hud-level-indicator-history').innerHTML="HIGH LEVEL : "+ score;
+			}
+		}
+		
+		
         return mLevel ? 'LEVEL ' + mLevel : 'QUALIFYING LEVEL';
     }
 
@@ -348,7 +365,7 @@ MG.game = (function () {
 							if(mLives == "Infinity"){
 							
 								if(Math.floor(Math.random() * 8) + 1 == 1 ){
-									window.app.requestInterstitial();
+									window.app.requestInterstitial(true);
 								}
 							}
                             if (mLives === 0) {
@@ -357,7 +374,7 @@ MG.game = (function () {
                                 mBestProgress = 0.0;
 								
 								if(Math.floor(Math.random() * 5) + 1 == 1 ){
-									window.app.requestInterstitial();
+									admob.requestInterstitialAd();
 								}
 								
                             } else {
