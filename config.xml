@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.missile" version="1.0.7"  android-versionCode="10007">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.missile" version="1.0.8"  android-versionCode="10008">
   <name>- Missile Tap</name>
   <description></description>
   <author href="#" email="vcshing2005@gmail.com">Sky Explorer</author>
