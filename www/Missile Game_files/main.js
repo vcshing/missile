@@ -1,10 +1,17 @@
+function addListenerMulti(el, s, fn) {
+  var evts = s.split(' ');
+  for (var i=0, iLen=evts.length; i<iLen; i++) {
+    el.addEventListener(evts[i], fn, false);
+  }
+}
+
 MG.init = function () {
     MG.fog.init();
     MG.banner.init();
     MG.game.init();
     MG.hud.init();
 
-    document.addEventListener('touchmove', function(evt){
+	addListenerMulti(window, 'touchstart touchmove', function(evt){
             MG.game.onMouseMove(evt.touches[0].clientX, evt.touches[0].clientY);
         }, false);
 
