@@ -1,5 +1,5 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.missile" version="1.0.8"  android-versionCode="10008">
-  <name>- Missile Tap</name>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.phonegap.missile" version="1.0.9"  android-versionCode="10009">
+  <name>1Missile Drag</name>
   <description></description>
   <author href="#" email="vcshing2005@gmail.com">Sky Explorer</author>
   <content src="index.html"/>
